@@ -248,13 +248,13 @@ dataDict={'earthquake':earthquake,
           'ConfinementSteelYielding':LS_ConfYield, 
           'LongitudinlSteelBuckling':LS_SteelBB}
 
-DataFrame_Out=pd.DataFrame(dataDict)
-#DataFrame_Out.plot.line(x='time_yrs',y='Steel_Strain')#,s=20,c='time_yrs',colormap='viridis')
-#plt.title('Confined Concrete maax Strain vs Time',fontsize=32)
-#plt.xlabel('Time (yrs)',fontsize=24)
-#plt.ylabel('Cnfined Concrete Strain (in/in)',fontsize=24)
-#plt.tick_params(direction='out',axis='both',labelsize=20)
-#plt.show
-DataFrame_Out.to_csv(r'C:\ConditionDependent_PBD\NLTHA_OpenseesPy\Postproc\PosprocData.csv')
-print("ALL ANALYSIS COMPLETE")
-print("--- %s minutes ---" % ((time.time() - start_time)/60))
+    DataFrame_Out=pd.DataFrame(dataDict)
+    #DataFrame_Out.plot.line(x='time_yrs',y='Steel_Strain')#,s=20,c='time_yrs',colormap='viridis')
+    #plt.title('Confined Concrete maax Strain vs Time',fontsize=32)
+    #plt.xlabel('Time (yrs)',fontsize=24)
+    #plt.ylabel('Cnfined Concrete Strain (in/in)',fontsize=24)
+    #plt.tick_params(direction='out',axis='both',labelsize=20)
+    #plt.show
+    DataFrame_Out.to_csv(r'C:\ConditionDependent_PBD\NLTHA_OpenseesPy\Postproc\PosprocData.csv')
+    print("POSTPROCESSING COMPLETE")
+    print("--- %s minutes ---" % ((time.time() - start_time)/60))
